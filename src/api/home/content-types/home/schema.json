@@ -1,11 +1,10 @@
 {
   "kind": "singleType",
-  "collectionName": "abouts",
+  "collectionName": "homes",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About",
-    "description": "Write about yourself and the content you create"
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "Home"
   },
   "options": {
     "draftAndPublish": false

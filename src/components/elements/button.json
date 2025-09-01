@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_elements_buttons",
+  "info": {
+    "displayName": "Button",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "url": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "variant": {
+      "type": "enumeration",
+      "required": true,
+      "default": "text",
+      "enum": [
+        "text",
+        "contained",
+        "outlined"
+      ]
+    },
+    "inNewTab": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    }
+  },
+  "config": {}
+}
