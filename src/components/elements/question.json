@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_questions",
+  "info": {
+    "displayName": "question",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "richtext"
+    }
+  },
+  "config": {}
+}

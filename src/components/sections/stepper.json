@@ -1,8 +1,8 @@
 {
-  "collectionName": "components_sections_heroes",
+  "collectionName": "components_sections_steppers",
   "info": {
-    "displayName": "Hero",
-    "icon": "star"
+    "displayName": "Stepper",
+    "icon": "stack"
   },
   "options": {},
   "attributes": {
@@ -15,16 +15,10 @@
     "text": {
       "type": "richtext"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "imageFirst": {
-      "type": "boolean",
-      "default": false
+    "steps": {
+      "type": "component",
+      "component": "elements.step",
+      "repeatable": true
     },
     "buttons": {
       "type": "component",
@@ -34,7 +28,7 @@
     "background": {
       "type": "component",
       "component": "shared.background",
-      "repeatable": false,
+      "repeatable": true,
       "required": true
     },
     "hideSection": {

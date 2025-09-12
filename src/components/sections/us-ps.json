@@ -1,0 +1,57 @@
+{
+  "collectionName": "components_sections_us_ps",
+  "info": {
+    "displayName": "USP",
+    "icon": "thumbUp"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "usps": {
+      "type": "component",
+      "component": "elements.usp",
+      "repeatable": true
+    },
+    "buttons": {
+      "type": "component",
+      "component": "elements.button",
+      "repeatable": true
+    },
+    "desktopColumns": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "min": 1,
+      "max": 4
+    },
+    "uspContainer": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "containerBackground": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$"
+    },
+    "background": {
+      "type": "component",
+      "component": "shared.background",
+      "repeatable": false,
+      "required": true
+    },
+    "hideSection": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "config": {}
+}

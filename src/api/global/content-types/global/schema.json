@@ -12,11 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "defaultSeo": {
-      "type": "component",
-      "component": "shared.seo",
-      "repeatable": false
-    },
     "headerLogo": {
       "type": "component",
       "component": "elements.logo",
@@ -40,6 +35,14 @@
         "navigation.link",
         "navigation.link-list"
       ]
+    },
+    "footerLinks": {
+      "type": "component",
+      "component": "navigation.link",
+      "repeatable": true
+    },
+    "copyrightText": {
+      "type": "string"
     }
   }
 }

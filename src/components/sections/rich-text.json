@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_sections_rich_texts",
+  "info": {
+    "displayName": "Richtext",
+    "icon": "pencil"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "textAlign": {
+      "type": "enumeration",
+      "required": true,
+      "default": "left",
+      "enum": [
+        "left",
+        "center",
+        "right"
+      ]
+    },
+    "background": {
+      "type": "component",
+      "component": "shared.background",
+      "repeatable": false,
+      "required": true
+    },
+    "buttons": {
+      "type": "component",
+      "component": "elements.button",
+      "repeatable": true
+    },
+    "hideSection": {
+      "type": "boolean",
+      "required": false,
+      "default": false
+    }
+  },
+  "config": {}
+}

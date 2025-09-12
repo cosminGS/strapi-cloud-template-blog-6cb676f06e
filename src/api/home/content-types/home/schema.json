@@ -9,19 +9,36 @@
   "options": {
     "draftAndPublish": false
   },
-  "pluginOptions": {},
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
   "attributes": {
     "SEO": {
       "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "component": "shared.seo",
       "repeatable": false
     },
     "sections": {
       "type": "dynamiczone",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
       "components": [
-        "shared.rich-text",
         "sections.testimonials",
-        "sections.hero"
+        "sections.hero",
+        "sections.rich-text",
+        "sections.faq",
+        "sections.us-ps",
+        "sections.stepper"
       ]
     }
   }

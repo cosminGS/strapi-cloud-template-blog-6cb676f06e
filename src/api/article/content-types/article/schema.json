@@ -47,9 +47,7 @@
     },
     "blocks": {
       "type": "dynamiczone",
-      "components": [
-        "shared.rich-text"
-      ]
+      "components": []
     }
   }
 }

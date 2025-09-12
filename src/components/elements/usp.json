@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_usps",
+  "info": {
+    "displayName": "usp",
+    "icon": "thumbUp"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string"
+    },
+    "subHeading": {
+      "type": "string"
+    },
+    "text": {
+      "type": "richtext"
+    },
+    "icon": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

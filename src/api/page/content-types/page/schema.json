@@ -1,14 +1,13 @@
 {
-  "kind": "singleType",
-  "collectionName": "abouts",
+  "kind": "collectionType",
+  "collectionName": "pages",
   "info": {
-    "singularName": "about",
-    "pluralName": "abouts",
-    "displayName": "About",
-    "description": "Write about yourself and the content you create"
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
@@ -17,14 +16,21 @@
       "component": "shared.seo",
       "repeatable": false
     },
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
     "sections": {
       "type": "dynamiczone",
       "components": [
         "sections.testimonials",
-        "sections.hero",
         "sections.rich-text",
-        "sections.us-ps",
+        "sections.hero",
         "sections.faq",
+        "sections.us-ps",
         "sections.stepper"
       ]
     }
