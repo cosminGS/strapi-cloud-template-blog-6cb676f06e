@@ -14,7 +14,7 @@
     },
     "content": {
       "type": "richtext",
-      "required": true
+      "required": false
     },
     "textAlign": {
       "type": "enumeration",

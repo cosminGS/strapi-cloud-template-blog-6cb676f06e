@@ -154,7 +154,7 @@ export interface SectionsRichText extends Struct.ComponentSchema {
     background: Schema.Attribute.Component<'shared.background', false> &
       Schema.Attribute.Required;
     buttons: Schema.Attribute.Component<'elements.button', true>;
-    content: Schema.Attribute.RichText & Schema.Attribute.Required;
+    content: Schema.Attribute.RichText;
     heading: Schema.Attribute.String;
     hideSection: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     subHeading: Schema.Attribute.String;
