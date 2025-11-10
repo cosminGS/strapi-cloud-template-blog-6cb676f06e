@@ -28,7 +28,7 @@
     "background": {
       "type": "component",
       "component": "shared.background",
-      "repeatable": true,
+      "repeatable": false,
       "required": true
     },
     "hideSection": {

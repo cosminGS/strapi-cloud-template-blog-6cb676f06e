@@ -171,7 +171,7 @@ export interface SectionsStepper extends Struct.ComponentSchema {
     icon: 'stack';
   };
   attributes: {
-    background: Schema.Attribute.Component<'shared.background', true> &
+    background: Schema.Attribute.Component<'shared.background', false> &
       Schema.Attribute.Required;
     buttons: Schema.Attribute.Component<'elements.button', true>;
     heading: Schema.Attribute.String;
