@@ -21,7 +21,8 @@
       "type": "dynamiczone",
       "components": [
         "navigation.link",
-        "navigation.link-list"
+        "navigation.link-list",
+        "navigation.link-button"
       ]
     },
     "footerLogo": {

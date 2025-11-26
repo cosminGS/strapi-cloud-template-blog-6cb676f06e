@@ -98,6 +98,21 @@ export interface NavigationLink extends Struct.ComponentSchema {
   };
 }
 
+export interface NavigationLinkButton extends Struct.ComponentSchema {
+  collectionName: 'components_navigation_link_buttons';
+  info: {
+    displayName: 'LinkButton';
+    icon: 'link';
+  };
+  attributes: {
+    inNewTab: Schema.Attribute.Boolean &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<false>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    path: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
 export interface NavigationLinkList extends Struct.ComponentSchema {
   collectionName: 'components_navigation_link_lists';
   info: {
@@ -272,6 +287,7 @@ declare module '@strapi/strapi' {
       'elements.testimonial': ElementsTestimonial;
       'elements.usp': ElementsUsp;
       'navigation.link': NavigationLink;
+      'navigation.link-button': NavigationLinkButton;
       'navigation.link-list': NavigationLinkList;
       'sections.faq': SectionsFaq;
       'sections.hero': SectionsHero;

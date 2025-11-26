@@ -534,7 +534,7 @@ export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
     >;
     headerLogo: Schema.Attribute.Component<'elements.logo', false>;
     headerMenu: Schema.Attribute.DynamicZone<
-      ['navigation.link', 'navigation.link-list']
+      ['navigation.link', 'navigation.link-list', 'navigation.link-button']
     >;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
