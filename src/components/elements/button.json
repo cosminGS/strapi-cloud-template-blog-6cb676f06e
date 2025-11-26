@@ -30,6 +30,11 @@
       "type": "boolean",
       "required": true,
       "default": false
+    },
+    "isExternal": {
+      "type": "boolean",
+      "required": true,
+      "default": false
     }
   },
   "config": {}
